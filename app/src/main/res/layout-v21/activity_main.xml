@@ -1,0 +1,44 @@
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/saldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70sp"
+            android:layout_marginTop="70sp"
+            android:text="Saldo R$ 0,00"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/movimentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movimentações"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/listaMovimentacao"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <Button
+            android:id="@+id/adicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"
+            android:layout_gravity="bottom|end"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.constraint.ConstraintLayout>
